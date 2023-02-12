@@ -13,8 +13,8 @@ int main()
     cout << "Enter height of trunk: ";
     cin >> trunkHeight;
     cout << endl;
-
-    while (trunkHeight < 0)
+    
+    while (trunkHeight <= 0)
     {
         cout << "Please enter a positive number for height of trunk: ";
         cin >> trunkHeight;
@@ -61,7 +61,7 @@ int main()
     cout << endl;
 
     // Output the tree top (i.e. leaves).
-    for (int i = 0; i <= leavesWidth; i += 2)
+    for (int i = 1; i <= leavesWidth; i += 2)
     {
         // Output spacing before asterisks.
         preLeavesSpacing = (leavesWidth - i) / 2;
@@ -96,9 +96,10 @@ int main()
         // Output trunk asterisks.
         for (int k = 1; k <= trunkWidth; ++k)
         {
-            cout << '*' << endl;
+            cout << '*';
         }
 
+        cout << endl;
 
     }
 
