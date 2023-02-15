@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <style>
+            p {
+                font-size: 20px;
+                font-weight: bold;
+                color: green
+            }
+            
+            div {
+                width: 100px;
+                height: 100px;
+                background: red;
+                margin-top: 10px;
+            }
+            
+            .blue {
+                background: blue;
+            }
+
+            .fence {
+                border: 2px dashed hotpink;
+            }
+
+            span.strike {
+                text-decoration: line-through;
+            }
+
+            div.puppies img, .special img{
+                height: 400px;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="blue fence">I am a paragraph!</p>
+        <p>But I am a paragraph too</p>
+
+        <div></div>
+        <div class="blue"></div>
+
+        <span class="fence strike">Strikeout</span>
+        <mark class="strike">Mark</mark> <!-- Not a span so the style span.strike does not apply -->
+
+        <br>
+
+        <div class="puppies">
+            <img src="cow.jpeg">
+        </div>
+
+        <br><br>
+
+        <span class="special"><img src="cow.jpeg"></span>
+
+    </body>
+</html>
