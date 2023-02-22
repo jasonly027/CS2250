@@ -1,0 +1,54 @@
+/** This is a comment **/
+body {
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+p.lorem {
+    color: white;
+    width: 300px;
+    height: 100px;
+    background: red;
+    overflow: auto;
+}
+
+div.special {
+    list-style: lower-latin;
+    padding-left: 10px;
+}
+
+div.special ul li:last-child {
+    padding-left: 30px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: aquamarine;
+}
+
+li {
+    float: left;
+    border-right: 1px solid gray;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #fbc2eb;
+}
+
+.active {
+    background-color: red;
+}
