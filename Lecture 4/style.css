@@ -1,5 +1,5 @@
 body {
-    background: url("cow.jpeg") no-repeat center center fixed;
+    /* background: url("cow.jpeg") no-repeat center center fixed; */
     background-size: cover;
 }
 p {
@@ -60,3 +60,11 @@ table tr th, table tr td {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: blue;
 }
+
+a:link {color: yellow;}
+
+a:visited {color: red;}
+
+a:hover {color: white;}
+
+a:active {color: pink;}
