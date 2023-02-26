@@ -9,7 +9,7 @@
 
     <body>
         <header>
-            <div class="banner">
+            <div class="header">
                 <h1>Minecraft Builds</h1>
             </div>
         </header>
@@ -23,24 +23,33 @@
             </ul>
         </nav>
 
-        <section>
+        <section class="content">
             <h2>Screenshots</h2>
             
             <!-- Requirement-1.P -->
             <details>
                 <!-- Requirement-1.Q -->
-                <summary>
+                <summary class="mcdescrip">
                     <!-- Requirement-1.H -->
                     What is <span style="color: green;">Minecraft</span>?
                 </summary>
                 <p><span style="color: green;">Minecraft</span> is an open-world 
-                    sandbox videogame that primarily focuses on building.
+                    sandbox videogame that primarily focuses on building. From the wiki:
+                    Minecraft is a 3D sandbox game developed by Mojang Studios where players 
+                    interact with a fully modifiable three-dimensional environment made of 
+                    blocks and entities. Its diverse gameplay lets players choose the way 
+                    they play, allowing for countless possibilities. There are four actively 
+                    maintained editions of Minecraft: Java Edition, Bedrock Edition, Minecraft 
+                    Education, and China Edition.
                 </p>
             </details>
-
+            
             <table>
                 <tr>
-                    <td><img src="images/bathhousefront.png" alt="Front of bathhouse" height="300"></td>
+                    <td>
+                        <img class="mcimg" src="images/mclogo.png" alt="Minecraft icon">
+                        <img src="images/bathhousefront.png" alt="Front of bathhouse" height="300">
+                    </td>
                     <td><img src="images/hotsprings.png" alt="Hot springs" height="300"></td>
                 </tr>
                 <tr>
@@ -54,10 +63,8 @@
             </table>
         </section>
 
-        <hr>
-
         <footer>
-            Email: <a href="mailto:jasonly@cpp.edu">jasonly@cpp.edu</a>
+            <a class="contact" href="mailto:jasonly@cpp.edu">Contact</a>
         </footer>
         
     </body>

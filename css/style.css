@@ -1,57 +1,142 @@
+/* Requirement-2.A */
 body {
-    /* Requirement-2.1 */
+    /* Requirement-2.6 */
     margin: 0;
+    /* Requirement-2.1 */
     font-family: sans-serif;
+    /* Requirement-2.3 */
     color: white;
+    /* Requirement-2.4 */
     background: rgb(20, 20, 20);
 }
 
-div.banner {
-    width: 100%;
+/* Requirement-2.B */
+div.header, footer {
     background-color: rgb(144, 90, 245);
 }
 
-div.banner h1 {
-    /* Requirement-2.6 */
+div.header h1 {
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: 1%;
+    /* Requirement-2.9 */
     padding: 10px;
 }
 
 nav {
     display: flex;
+    /* Requirement-2.15 */
+    position: sticky;
+    top: 0;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 100%;
     background-color: rgb(108, 64, 189);
+    /* Requirement-2.17 */
+    z-index: 1;
 }
 
 nav ul {
     margin: 0;
 }
 
+/* Requirement-2.F */
 nav ul li {
     display: block;
+    /* Requirement-2.11 */
     float: left;
+    /* Requirement-2.13 */
+    clear: right;
+    /* Requirement-2.8 */
     list-style-type: none;
+    /* Requirement-2.5 */
     border-left: 1px solid rgb(78, 47, 139);
-}
-
-nav ul li:last-child {
+    margin-left: -1px;
     border-right: 1px solid rgb(78, 47, 139);
+
 }
 
+/* Requirement-2.C */
 .navButton {
+    /* Requirement-2.12 */
     display: block;
+    /* Requirement-2.2 */
     text-decoration: none;
     color: rgb(245, 245, 245);
     background-color: rgb(108, 64, 189);
     font-weight: 650;
+    /* Requirement-2.10 */
     padding: 0.7em 2em;
 }
 
 .navButton:hover {
     background-color: rgb(87, 51, 155);
-    
+}
+
+.navButton:active {
+    color: rgb(196, 196, 196);
+}
+
+.contact {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+    background-color: rgb(144, 90, 245);
+    font-weight: 650;
+    padding: 0.7em 2em;
+    border-left: 1px solid rgb(68, 40, 122);
+    border-right: 1px solid rgb(121, 73, 211);
+}
+
+/* Requirement-2.E */
+.contact:hover {
+    background-color: rgb(108, 64, 189);
+}
+
+.contact:active {
+    color: rgb(196, 196, 196);
+}
+
+/* Requirement-2.D */
+#homecontent {
+    text-align: center;
+}
+
+.content table{
+    margin: auto;
+}
+
+.content h2 {
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Requirement-2.7 */
+.gallery img{
+    height: 200px;
+}
+
+/* Requirement-2.G */
+details {
+    /* Requirement-2.14 */
+    overflow-y: scroll;
+    width: 350px;
+    height: 150px;
+}
+
+/* Requirement-2.H */
+summary {
+    color: lightgreen;
+}
+
+img.mcimg {
+    position: absolute;
+    height: 25px;
+    /* Requirement-2.16 */
+    visibility: visible;
+    float: left;
+    z-index: 0;
 }
