@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <style>
+            div.animation {
+                width: 100;
+                height: 100;
+                background: rebeccapurple;
+                position: relative;
+                animation-name: example;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes example {
+                0% {
+                    background: red;
+                    left: 0px;
+                    top: 0px;
+                }
+                25% {
+                    background: black;
+                    left: 200px;
+                    top: 0px;
+                }
+                50% {
+                    background: blue;
+                    left: 200px;
+                    top: 200px;
+                }
+                75% {
+                    background: green;
+                    left: 0px;
+                    top: 200px;
+                }
+                100% {
+                    background: red;
+                    left: 0px;
+                    top: 0px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="animation"></div>
+    </body>
+</html>
