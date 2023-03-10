@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script>
+            function changeColor(event) {
+                const TEXT = document.getElementById('text');
+                const color = event.currentTarget.innerText;
+                text.style.color = color;
+            }
+        </script>
+    </head>
+    <body>
+        
+        <h1 id="text">Click button to change color!</h1>
+        <button onclick="changeColor(event)">Blue</button>
+        <button onclick="changeColor(event)">Red</button>
+    </body>
+</html>
